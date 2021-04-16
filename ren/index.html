@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- this is where the title page begins (with the typing effect) -->
+    <div class="headcontainer" id="modalA">
+        <h1 class="titletext">
+            <span id="text"></span>
+            <span class="text__decorator">_</span>
+        </h1>
+        <h2 class="bottomtext">scroll</h2>
+    </div>    
+    <!-- title ends -->
+
+    <!-- heading bar starts -->
+    <div class="head" id=modalB>
+        <nav role="navigation">
+            <div id="menuToggle">
+            <!--A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.-->
+                <input type="checkbox" />
+                <!--Some spans to act as a hamburger.
+                They are acting like a real hamburger,
+                not that McDonalds stuff.-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                <!--Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.-->
+                <ul id="menu">
+                    <a href="#modalA"><li>Home</li></a>
+                    <a href="#modalB"><li>Catalogue</li></a>
+                    <a href="https://www.creema.jp/c/refugee_empw_netwk/item/onsale" target="_blank"><li>Buy Online</li></a>
+                    <a href="#modalC"><li>Buy In Shop</li></a>
+                    <a href="https://www.ren-nanmin.org/"><li>Organization Website</li></a>
+                    <a href="#"><li>Website Creator</li></a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- hamburger menu ends -->
+    <h1>Catalogue</h1>
+    <div class="flex">
+        <div class="merch">
+            <div class="img">
+                <img src="images/IMG_7091.jpg" alt="">
+            </div>
+            <div class="sub" data-toggle="modal" data-target="#modal1">
+                Tsurukusa Two-way Pendant 
+            </div>
+        
+        </div>
+    
+        <div class="merch" data-toggle="modal" data-target="#modal2">
+            <div class="img">
+                <img src="images/IMG_7121.jpg" alt="">
+            </div>
+            <div class="sub">
+                Matte Gold Heart Pendant
+            </div>
+            
+        </div>
+
+        <div class="merch"  data-toggle="modal" data-target="#modal3">
+            <div class="img">
+                <img src="images/IMG_7091.jpg" alt="">
+            </div>
+            <div class="sub">
+                Mini Fringe Pendant
+            </div>
+                
+        </div>
+
+        <div class="merch" data-toggle="modal" data-target="#modal4">
+            <div class="img">
+                <img src="images/IMG_7091.jpg" alt="">
+            </div>
+            <div class="sub">
+                Initial Pendant
+            </div>
+                    
+        </div>
+
+        <div class="merch" data-toggle="modal" data-target="#modal5">
+            <div class="img">
+                <img src="images/IMG_7108.jpg" alt="">
+            </div>
+            <div class="sub">
+                Ball Earrings
+            </div>
+                        
+        </div>
+
+        <div class="merch"  data-toggle="modal" data-target="#modal6">
+            <div class="img">
+                <img src="images/IMG_7110.jpg" alt="">
+            </div>
+            <div class="sub">
+                Ball Earrings
+            </div>
+                            
+        </div>
+
+        <div class="merch"  data-toggle="modal" data-target="#modal7">
+            <div class="img">
+                <img src="images/IMG_7111.jpg" alt="">
+            </div>
+            <div class="sub">
+                Ball Earrings
+            </div>
+                                
+        </div>
+
+        <div class="merch"  data-toggle="modal" data-target="#modal8">
+            <div class="img">
+                <img src="images/IMG_7112.jpg" alt="">
+            </div>
+            <div class="sub">
+                Stick Earrings
+            </div>
+                                    
+        </div>
+
+        <div class="merch">
+            <div class="img">
+                <img src="images/IMG_7113.JPG" alt="">
+            </div>
+            <div class="sub">
+                Stick Earrings
+            </div>
+                                        
+        </div>
+
+        <div class="merch">
+            <div class="img">
+                <img src="images/IMG_7091.jpg" alt="">
+            </div>
+            <div class="sub">
+                つる草２ウェイペンダントビーズチェーン
+            </div>
+                                            
+        </div>
+   
+        <div class="merch">
+            <div class="img">
+                <img src="images/IMG_7091.jpg" alt="">
+            </div>
+            <div class="sub"data-toggle="modal" data-target="#modal1">
+                Tsurukusa Two-way Pendant 
+            </div>
+        
+        </div>
+
+        <div class="merch">
+            <div class="img">
+                <img src="images/IMG_7091.jpg" alt="">
+            </div>
+            <div class="sub"data-toggle="modal" data-target="#modal1">
+                Tsurukusa Two-way Pendant 
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div id="modal1" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="split right" id="result">
+                        <div class="ex">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><div class="x">x</div><div class="close">close</div></button>
+                        </div>
+                        <div class="centered1">
+                            <h1 class="title">Tsurukusa Two-way Pendant</h1>
+                            <ul class="category"> Necklace</ul>
+                            <p class="description">Pendant Size: 5.3cmｘ3cm<br>Length: 60cm<br> <br>Blue<br>Gold</p>
+                        </div>
+                    </div>
+                    <div class="split left">
+                        <div class="centered2">
+                            <img src="images/IMG_7091.jpg" alt="">
+                            <img src="images/IMG_7090.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="split right" id="result">
+                        <div class="ex">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><div class="x">x</div><div class="close">close</div></button>
+                        </div>
+                        <div class="centered1">
+                            <h1 class="title">Matte Gold Heart Pendant</h1>
+                            <ul class="category"> Necklace</ul>
+                            <p class="description">Pendant Size: 1.4cm x 1.4cm<br>Length: 50cm<br> <br>Matte Gold</p>
+                        </div>
+                    </div>
+                    <div class="split left">
+                        <div class="centered2">
+                            <img src="images/IMG_7106.jpg" alt="">
+                            <img src="images/IMG_7105.jpg" alt="">
+                            <img src="images/IMG_7107.jpg" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div id="modal3" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="split right" id="result">
+                    <div class="ex">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><div class="x">x</div><div class="close">close</div></button>
+                    </div>
+                    <div class="centered1">
+                        <h1 class="title">Mini Fringe Pendant</h1>
+                        <ul class="category"> Necklace</ul>
+                        <p class="description">Pendant Size: 6cmｘ1.5cm<br>Length: 46cm<br> <br>50cm also available</p>
+                    </div>
+                </div>
+                <div class="split left">
+                    <div class="centered2">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="split right" id="result">
+                    <div class="ex">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+                    </div>
+                    <div class="centered1">
+                        <h1 class="title">Initial Pendant</h1>
+                        <ul class="category"> Necklace</ul>
+                        <p class="description">Pendant Size: Depends on Preferred Initial<br>Length: 50cm<br><br>Gold Chain</p>
+                    </div>
+                </div>
+                <div class="split left">
+                    <div class="centered2">
+                        <img src="images/IMG_7091.jpg" alt="">
+                        <img src="images/IMG_7090.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="split right" id="result">
+                    <div class="ex">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+                    </div>
+                    <div class="centered1">
+                        <h1 class="title">Initial Pendant</h1>
+                            <ul class="category"> Necklace</ul>
+                            <p class="description">Pendant Size: Depends on Preferred Initial<br>Length: 50cm<br><br>Gold Chain</p>
+                    </div>
+                </div>
+                <div class="split left">
+                    <div class="centered2">
+                        <div id="modal4" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="split right" id="result">
+                    <div class="ex">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+                    </div>
+                    <div class="centered1">
+                        <h1 class="title">Ball Earrings</h1>
+                        <ul class="category"> Earrings</ul>
+                        <p class="description">Length: 3.2cm<br>Color: Turquoise</p>
+                    </div>
+                </div>
+                <div class="split left">
+                    <div class="centered2">
+                        <img src="images/IMG_7108.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="split right" id="result">
+                        <div class="ex">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+                        </div>
+                        <div class="centered1">
+                            <h1 class="title">Initial Pendant</h1>
+                                <ul class="category"> Necklace</ul>
+                                <p class="description">Pendant Size: Depends on Preferred Initial<br>Length: 50cm<br><br>Gold Chain</p>
+                        </div>
+                    </div>
+                    <div class="split left">
+                        <div class="centered2">
+                            <div id="modal4" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="split right" id="result">
+                        <div class="ex">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+                        </div>
+                        <div class="centered1">
+                            <h1 class="title">Ball Earrings</h1>
+                            <ul class="category"> Earrings</ul>
+                            <p class="description">Length: 3.2cm<br>Color: Turquoise</p>
+                        </div>
+                    </div>
+                    <div class="split left">
+                        <div class="centered2">
+                            <img src="images/IMG_7108.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+<div class="fes" id="modalC">
+    <h1>Buy in Shop</h1>
+    <h2>We will have a pop-up store at the Shibuya High School Festival (Hiryuusai)!</h2>
+        <p>We will be selling a few items on the catalogue at a pop-up store held at Shibuya High School during its school festival.<br>Access information is listed below.</p>
+    <h3>Shibuya High School</h3>
+    <h4>Access Information</h4>
+
+    <h4>Official School Website</h4>
+        <a href="https://www.shibushibu.jp/" class="schoolweb">https://www.shibushibu.jp/</a>
+        <p>Disclaimer: Tickets are needed to enter the school festival in Shibuya High School. <br> Please make sure to contact any acquaintances in the school for reservations or order tickets on your own from the school website linked above.</p>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src=”jquery.rellax.min.js></script>
+
+</body>
+
+<footer> &copy; Yurika R. Shimoyama</footer>
+
+</html>
